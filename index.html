@@ -1,75 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ezria Kathryn Joe — Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #ffe6f0; /* light pink background */
-      color: #333;
+    :root{
+      --pink:#ff4d88;
+      --pink-200:#ffe6f0;
+      --pink-300:#ff99bb;
+      --pink-700:#cc0066;
+      --text:#2b2b2b;
+      --card:#ffffff;
     }
-    header {
-      background-color: #ff4d88; /* bold pink header */
-      color: white;
-      text-align: center;
-      padding: 2rem;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Inter, system-ui, Arial, sans-serif;
+      background:var(--pink-200); color:var(--text); line-height:1.55;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    header{
+      background:var(--pink); color:#fff; text-align:center; padding:2rem 1rem;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
+    header h1{margin:0 0 .5rem; font-size:2.4rem}
+    header p{margin:0; font-size:1.05rem}
+    .wrap{max-width:920px; margin:auto; padding:2rem 1rem}
+    .card{
+      background:var(--card); border:1px solid #f3c6d6;
+      border-radius:18px; padding:1.25rem 1.25rem; box-shadow:0 6px 18px rgba(0,0,0,.06);
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #cc0066;
-      border-bottom: 2px solid #ff99bb;
-      padding-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      background-color: #ff4d88;
-      color: white;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    a {
-      color: #cc0066;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Highlighting software, data, and web development with a focus on mathematics and programming — deployed with GitHub Pages.</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>Hi, I’m <strong>Ezria Kathryn Joe</strong> 👋. I’m passionate about combining mathematics, programming, and design to create meaningful tech solutions.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Let’s connect! Find me on <a href="https://github.com/kathrynk0des" target="_blank">GitHub</a>.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Ezria Kathryn Joe — Built with 💻 & GitHub Pages</p>
-  </footer>
-</body>
-</html>
+    .profile{display:grid; grid-template-columns:160px 1fr; gap:1.25rem; align-items:center}
