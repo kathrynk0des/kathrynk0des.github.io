@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ezria Kathryn Joe — Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root{
       --pink:#ff4d88;
@@ -25,8 +27,9 @@
     header p{margin:0; font-size:1.05rem}
     .wrap{max-width:920px; margin:auto; padding:2rem 1rem}
     .card{
-      background:var(--card); border:1px solid #f3c6d6;
-      border-radius:18px; padding:1.25rem 1.25rem; box-shadow:0 6px 18px rgba(0,0,0,.06);
+      background:var(--card); border:2px solid var(--pink-300);
+      border-radius:18px; padding:1.5rem; box-shadow:0 6px 18px rgba(0,0,0,.08);
+      margin-bottom:2rem;
     }
     .profile{display:grid; grid-template-columns:160px 1fr; gap:1.25rem; align-items:center}
     .avatar{
@@ -34,17 +37,20 @@
       border:4px solid var(--pink-300); background:#fff;
     }
     h2{
-      color:var(--pink-700); margin:.25rem 0 .5rem;
+      color:var(--pink-700); margin:.25rem 0 1rem;
       border-bottom:2px solid var(--pink-300); padding-bottom:.35rem; display:inline-block
     }
-    .links{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.5rem}
+    ul{margin:0; padding-left:1.2rem}
+    .links{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.75rem}
     .btn{
-      display:inline-block; padding:.6rem .9rem; border-radius:999px; font-weight:600;
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.6rem 1rem; border-radius:999px; font-weight:600;
       text-decoration:none; background:var(--pink); color:#fff; border:1px solid var(--pink);
       transition:.15s transform ease, .15s filter ease;
     }
     .btn.outline{background:#fff; color:var(--pink-700); border-color:var(--pink-300)}
-    .btn:hover{transform:translateY(-1px); filter:brightness(1.03)}
+    .btn i{font-size:1.1rem}
+    .btn:hover{transform:translateY(-1px); filter:brightness(1.05)}
     footer{ text-align:center; padding:1.5rem; color:#5c5c5c}
     @media (max-width:640px){ .profile{grid-template-columns:1fr} .avatar{width:140px; margin:auto} }
   </style>
@@ -56,21 +62,46 @@
   </header>
 
   <main class="wrap">
+    <!-- ABOUT -->
     <section>
       <h2>About</h2>
       <div class="card profile">
-        <!-- Replace headshot.jpg with your uploaded image filename -->
         <img src="headshot.jpg" alt="Portrait of Ezria Kathryn Joe" class="avatar" />
         <div>
           <p>I am <strong>Ezria Kathryn Joe</strong>. I am a data scientist who is passionate about combining mathematics and design to create meaningful solutions.</p>
-          <p><em>Fun fact:</em> I’m a dancer getting back into ballet training 🩰.</p>
+          <p><em>Fun fact:</em> I love to crochet and knit new sweaters and creative projects 🧶.</p>
 
           <div class="links">
-            <!-- Upload your PDF as resume.pdf or change the href -->
-            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file"></i> Resume</a>
+            <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Languages:</strong> Python, C++, SQL, R</li>
+          <li><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Jupyter Notebooks</li>
+          <li><strong>Developer Tools:</strong> GitHub, VS Code, AWS</li>
+          <li><strong>Web Development:</strong> HTML, CSS, Bootstrap, React</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>📧 Email: <a href="mailto:ezria.joe@gmail.com">ezria.joe@gmail.com</a></p>
+        <p>📱 Phone: <a href="tel:+16468840615">646-884-0615</a></p>
+        <div class="links">
+          <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
         </div>
       </div>
     </section>
@@ -80,3 +111,4 @@
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
