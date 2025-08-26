@@ -24,7 +24,12 @@
       background:var(--pink); color:#fff; text-align:center; padding:2rem 1rem;
     }
     header h1{margin:0 0 .5rem; font-size:2.4rem}
-    header p{margin:0; font-size:1.05rem}
+    header p{
+      margin:0;
+      font-size:1.1rem;
+      font-style:italic;
+      font-family:'Georgia','Times New Roman',cursive;
+    }
     .wrap{max-width:920px; margin:auto; padding:2rem 1rem}
     .card{
       background:var(--card); border:2px solid var(--pink-300);
@@ -41,7 +46,9 @@
       border-bottom:2px solid var(--pink-300); padding-bottom:.35rem; display:inline-block
     }
     ul{margin:0; padding-left:1.2rem}
-    .links{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.75rem}
+    .role {margin-bottom:1.2rem;}
+    .role strong {color: var(--pink-700);}
+    .links{display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; margin-top:.75rem}
     .btn{
       display:inline-flex; align-items:center; gap:.5rem;
       padding:.6rem 1rem; border-radius:999px; font-weight:600;
@@ -70,12 +77,6 @@
         <div>
           <p>I am <strong>Ezria Kathryn Joe</strong>. I am a data scientist who is passionate about combining mathematics and design to create meaningful solutions.</p>
           <p><em>Fun fact:</em> I love to crochet and knit new sweaters and creative projects 🧶.</p>
-
-          <div class="links">
-            <a class="btn" href="resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file"></i> Resume</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-            <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
         </div>
       </div>
     </section>
@@ -93,6 +94,73 @@
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <div class="role">
+          <strong>Software Developer — CUNY Tutor Corps</strong> <em>(May 2025 – Present, New York City, NY)</em>
+          <ul>
+            <li>Designed and implemented a diagnostic platform to identify gaps in students’ math fundamentals for Regents exam prep</li>
+            <li>Integrated assessments with tutoring strategies to improve student outcomes</li>
+            <li>Applied data-driven insights to support individualized instruction</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Data Science Fellow — CUNY Tech Prep</strong> <em>(May 2025 – Present, New York City, NY)</em>
+          <ul>
+            <li>Selected for a competitive fellowship across the 11 CUNY senior colleges</li>
+            <li>Worked on projects using Python, Jupyter Notebooks, Pandas, NumPy, Scikit-learn, and SQL</li>
+            <li>Learned best practices for EDA, data visualization, feature engineering, and machine learning</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Teaching Assistant — CUNY Tutor Corps</strong> <em>(Aug 2024 – Present, New York City, NY)</em>
+          <ul>
+            <li>Guided lesson planning and improved student understanding in algebra and geometry</li>
+            <li>Applied statistics and logical reasoning to help build math confidence</li>
+            <li>Adapted strategies based on student needs and progress</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Tech Fellow — CodePath</strong> <em>(Sept 2024 – Nov 2024)</em>
+          <ul>
+            <li>Completed intensive training in data structures, algorithms, and coding challenges</li>
+            <li>Engaged in mock interviews and problem-solving practice</li>
+            <li>Strengthened technical problem-solving skills under pressure</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Mathematics Tutor — CUNY Baruch College</strong> <em>(Jul 2023 – Jul 2025, New York City, NY)</em>
+          <ul>
+            <li>Provided one-on-one tutoring in algebra, geometry, and statistics</li>
+            <li>Helped students strengthen problem-solving skills and prepare for exams</li>
+            <li>Used data from practice tests to improve academic outcomes</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <strong>Customer Service & Sales Lead — Conrad's Bakery</strong> <em>(May 2021 – Jul 2023, New York City, NY)</em>
+          <ul>
+            <li>Analyzed sales activity to identify trends and improve team performance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Baruch College, City University of New York</strong><br>
+        Bachelor of Arts in Mathematics</p>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section>
       <h2>Contact</h2>
@@ -100,6 +168,7 @@
         <p>📧 Email: <a href="mailto:ezria.joe@gmail.com">ezria.joe@gmail.com</a></p>
         <p>📱 Phone: <a href="tel:+16468840615">646-884-0615</a></p>
         <div class="links">
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file"></i> Resume</a>
           <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
           <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
         </div>
@@ -111,4 +180,3 @@
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
