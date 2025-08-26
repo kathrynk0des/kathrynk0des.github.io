@@ -29,3 +29,54 @@
       border-radius:18px; padding:1.25rem 1.25rem; box-shadow:0 6px 18px rgba(0,0,0,.06);
     }
     .profile{display:grid; grid-template-columns:160px 1fr; gap:1.25rem; align-items:center}
+    .avatar{
+      width:160px; aspect-ratio:1/1; border-radius:16px; object-fit:cover;
+      border:4px solid var(--pink-300); background:#fff;
+    }
+    h2{
+      color:var(--pink-700); margin:.25rem 0 .5rem;
+      border-bottom:2px solid var(--pink-300); padding-bottom:.35rem; display:inline-block
+    }
+    .links{display:flex; flex-wrap:wrap; gap:.75rem; margin-top:.5rem}
+    .btn{
+      display:inline-block; padding:.6rem .9rem; border-radius:999px; font-weight:600;
+      text-decoration:none; background:var(--pink); color:#fff; border:1px solid var(--pink);
+      transition:.15s transform ease, .15s filter ease;
+    }
+    .btn.outline{background:#fff; color:var(--pink-700); border-color:var(--pink-300)}
+    .btn:hover{transform:translateY(-1px); filter:brightness(1.03)}
+    footer{ text-align:center; padding:1.5rem; color:#5c5c5c}
+    @media (max-width:640px){ .profile{grid-template-columns:1fr} .avatar{width:140px; margin:auto} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ezria Kathryn Joe</h1>
+    <p>Data scientist passionate about mathematics, design, and meaningful solutions.</p>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>About</h2>
+      <div class="card profile">
+        <!-- Replace headshot.jpg with your uploaded image filename -->
+        <img src="headshot.jpg" alt="Portrait of Ezria Kathryn Joe" class="avatar" />
+        <div>
+          <p>I am <strong>Ezria Kathryn Joe</strong>. I am a data scientist who is passionate about combining mathematics and design to create meaningful solutions.</p>
+          <p><em>Fun fact:</em> I’m a dancer getting back into ballet training 🩰.</p>
+
+          <div class="links">
+            <!-- Upload your PDF as resume.pdf or change the href -->
+            <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+            <a class="btn outline" href="https://www.linkedin.com/in/ezria-joe-03463a15a/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn outline" href="https://github.com/kathrynk0des" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Ezria Kathryn Joe — Built with 💻 & GitHub Pages</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
